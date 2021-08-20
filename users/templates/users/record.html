@@ -1,0 +1,34 @@
+{% extends 'users/home.html' %}
+{% load static %}
+{% block content %}
+<title>Transaction History</title>
+<br>
+<h1 style="color:black; font-family: 'Playfair Display', serif;font-size: 40px;text-align:center;">Transaction History</h1>
+<br>
+<br>
+<table>
+<thead> 
+<tr>
+<th>Sr No.</th>
+<th>Sender</th>
+<th>Reciever</th>
+<th>Amount Transferred (in ₹)</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+{% for t in tr %}
+<tr>
+<td>{{t.id}}</td>
+<td>{{t.sender}}</td>
+<td>{{t.reciever}}</td>
+<td>{{t.amount}}</td>
+<td>{{t.date}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+<br>
+
+{% endblock content %}

@@ -1,0 +1,38 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block content %}
+<title>Customer Details</title>
+<br>
+<h1 style="color:black;font-family:'Playfair Display', serif;font-size: 40px;text-align:center;">Customer Details</h1>
+<br>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-12 d-block m-auto">
+<br>
+<table>
+<thead> 
+<tr>
+<th>Sr No.</th>
+<th>Name</th>
+<th>Email</th>
+<th>Account Balance</th>
+</tr>
+</thead>
+<tbody>
+{% for cust in customer %}
+<tr>
+<td>{{cust.id}}</td>
+<td>{{cust.name}}</td>
+<td>{{cust.email}}</td>
+<td>₹ {{cust.bal}}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+<br>
+<br>
+</div>
+</div>
+</div>
+
+{% endblock content %}

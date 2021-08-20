@@ -1,0 +1,74 @@
+
+{% extends 'users/base.html' %}
+
+{% load static %}
+    
+
+    {% block content %}
+    <title>The Sparks Bank</title>
+    <!-- <div class="container c1" id="bg">
+    </div> -->
+    <div class="container-fluid" style="background:url('/static/users/img/bank2.jpg');background-size:100% 100%;">
+        <div class="row py-5" style="background:rgba(0,0,0,0.5)">
+            <div class="col-md-12 py-5 my-5 text-light text-center font-weight-bold ">
+                <strong class="text-uppercase" style="font-size: 40px;">The Sparks Bank</strong>
+                <h3 style="margin-top: 25px;">Sparks Foundation (GRIP) internship program</h3>
+                <h3>Name : Shivani Suresh Kulkarni</h3>
+                <h3>Domain : Web Development & Design</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container c2">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 col-12">
+                <div class="card" style="width: 70%">
+                    <img class="card-img-top" src="{% static 'users/img/customer2.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Customers</h5>
+                        <p class="card-text"><i>View the list of all customers.</i></p>
+                        <a href="{% url 'customers' %}" class="btn">View</a>
+                        <a class="card-icon" href=""><!--<i class="fas fa-user-tie fa-2x"
+                                data-fa-transform="down-4 grow-2 right-2" style="color:blue"></i>--></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 col-12">
+                <div class="card" style="width: 70%">
+                    <img class="card-img-top" src="{% static 'users/img/transfer2.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Money Transfer</h5>
+                        <p class="card-text"><i>Transfer money to any customer.</i></p>
+                        <a href="{% url 'transfer' %}" class="btn">Transfer money</a>
+                        <a class="card-icon" href=""><!--<i class="fas fa-money-check-alt fa-2x"
+                                data-fa-transform="down-4 grow-4 right-2" style="color:green"></i>--></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 col-12">
+                <div class="card" style="width: 70%">
+                    <img class="card-img-top" src="{% static 'users/img/history2.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Records</h5>
+                        <p class="card-text"><i>View all the previous transactions.</i></p>
+                        <a href="{% url 'record' %}" class="btn">View history</a>
+                        <a class="card-icon" href=""><!--<i
+                                class="fas fa-file-invoice-dollar fa-2x" data-fa-transform="down-4 grow-2 right-2"
+                                style="color:black"></i>--></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock content %}
+    <br>
+    </div>
+
+    
+
+
+
+</body>
+
+</html>
